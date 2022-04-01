@@ -4,8 +4,12 @@
   "keywords": [
     "app-cloud"
   ],
-  "scripts": {
-    "postdeploy": "heroku config:set AUTH0_CALLBACK_URL=https://dbtest-pr-5.herokuapp.com/callback  -a dbtest-pr-4"
+  "environments": {
+    "review": {
+      "scripts": {
+        "postdeploy": "heroku config:set AUTH0_CALLBACK_URL=https://$HEROKU_APP_NAME.herokuapp.com/callback",
+      }
+    }
   },
   "repository": "https://github.com/BoomLEE/intro-to-heroku",
   "addons": [
