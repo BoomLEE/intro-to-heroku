@@ -6,13 +6,14 @@
   ],
   "environments": {
     "review": {
-      "scripts": {
-        "postdeploy": "heroku config:set AUTH0_CALLBACK_URL=https://$HEROKU_APP_NAME.herokuapp.com/callback",
+      "env": {
+        "SECRET_TOKEN": "test-secret"
       }
     }
   },
   "repository": "https://github.com/BoomLEE/intro-to-heroku",
   "addons": [
-    "heroku-postgresql"
+    "heroku-postgresql",
+    "heroku-connect"
   ]
 }
