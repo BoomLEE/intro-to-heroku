@@ -13,6 +13,6 @@
   },
   "repository": "https://github.com/BoomLEE/intro-to-heroku",
   "addons": [
-    "heroku-postgresql:standard-0"
+    "plan": "heroku-postgresql:standard-0"
   ]
 }
