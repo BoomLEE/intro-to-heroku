@@ -11,10 +11,13 @@
       }
     }
   },
+  
   "repository": "https://github.com/BoomLEE/intro-to-heroku",
-  "addons": [
-    {
-      "plan": "heroku-postgresql"
-    }
-  ]
+  "addons": 
+  ["heroku-postgresql:standard-0"],
+    "environments": {
+       "review": {
+         "addons": ["heroku-postgresql:mini"]
+        }
+  }
 }
