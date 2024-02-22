@@ -4,13 +4,6 @@
   "keywords": [
     "app-cloud"
   ],
-  "environments": {
-    "review": {
-      "scripts": {
-        "postdeploy": "heroku config:set AUTH0_CALLBACK_URL=https://$HEROKU_APP_NAME.herokuapp.com/callback",
-      }
-    }
-  },
   "repository": "https://github.com/BoomLEE/intro-to-heroku",
   "addons": [
     "heroku-postgresql"
